@@ -141,10 +141,7 @@ class PlayerController {
 
       if (player) {
         let expValue = player.experience + parseInt(exp);
-        let lvlValue =
-          Math.floor(expValue / LEVEL_BAR) == player.lvl
-            ? player.lvl
-            : player.lvl + 1;
+        let lvlValue = Math.floor(expValue / LEVEL_BAR) == player.lvl ? player.lvl : player.lvl + 1;
 
         const updateLvl = await Player.update(
           {
