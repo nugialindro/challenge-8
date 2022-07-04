@@ -7,7 +7,7 @@ function BackButton() {
 
   return (
     <button className="back-button mb-5" onClick={() => history.goBack()}>
-      <img src={backImg} alt="editplayer"></img>{" "}
+      <img src={backImg} alt="editplayer"></img>
     </button>
   );
 }
