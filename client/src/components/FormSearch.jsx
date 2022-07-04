@@ -1,7 +1,7 @@
 import { Form, Button } from "react-bootstrap";
 import { useState } from "react";
 import cn from "classnames";
-import "./FormSearch.css";
+import "./Form.css";
 import "../App.css";
 
 function CreateForm() {
@@ -27,15 +27,26 @@ function CreateForm() {
   return (
     <div className="search-page">
       <h2>Search player . . .</h2>
-      <Form className="search-form" onSubmit={handleSubmit}>
-        <Form.Control type="search" onChange={handleKeyword} placeholder="Search" className="me-2" aria-label="Search" />
-        <Button variant="outline-success" type="submit" onClick={handleSearchKeyword}>
-          Search
-        </Button>
-      </Form>
+      <div className="search-container">
+        <Form className="search-form mb-4" onSubmit={handleSubmit}>
+          <Form.Control type="search" onChange={handleKeyword} placeholder="Search" className="me-2" aria-label="Search" />
+          <Button variant="outline-success" type="submit" onClick={handleSearchKeyword}>
+            Search
+          </Button>
+        </Form>
+        <div className="search-filer">
+          <Form.Group>
+            <p>Search by :</p>
+            <Form.Check inline label="username" id="username" type="checkbox" />
+            <Form.Check inline label="email" id="email" type="checkbox" />
+            <Form.Check inline label="exp" id="exp" type="checkbox" />
+            <Form.Check inline label="lvl" id="lvl" type="checkbox" />
+          </Form.Group>
+        </div>
+      </div>
 
       <>
-        <div className={cn(isSubmit && "new-user-details")}>
+        <div className={cn(isSubmit && "search-details")}>
           {searchData.map((data, index) => (
             <div key={index}>
               <p>Result for "{data.keyword}" </p>

@@ -1,0 +1,72 @@
+.new-player-form {
+  background-color: #323232;
+  padding: 50px;
+  color: white;
+  width: 400px;
+  border-radius: 20px;
+}
+
+.new-player-details {
+  width: 400px;
+  background-color: #323232;
+  padding: 50px;
+  color: white;
+  width: 400px;
+  border-radius: 20px;
+}
+
+.boxMenu {
+  color: white;
+  background-color: #323232;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  border-radius: 15px;
+  transition: transform 0.3s;
+  cursor: pointer;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.boxMenu:hover {
+  transform: scale(1.1);
+}
+
+.search-container {
+  background-color: #323232;
+  padding: 50px;
+  color: white;
+  border-radius: 20px;
+}
+
+.search-form {
+  display: flex;
+  background-color: #323232;
+  color: white;
+  width: 700px;
+  border-radius: 20px;
+}
+
+.search-details {
+  width: 800px;
+  background-color: #323232;
+  padding: 50px;
+  color: white;
+  border-radius: 20px;
+}
+
+.back-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./img/back.png");
+  background-repeat: no-repeat;
+
+  color: white;
+  width: 70px;
+  height: 50px;
+  border-radius: 20px;
+}

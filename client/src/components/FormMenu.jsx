@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { Nav } from "react-bootstrap";
-import "../components/FormMenu.css";
+import "../components/Form.css";
 import newImg from "./img/new.png";
 import editImg from "./img/edit.png";
 import findImg from "./img/find.png";

@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
 
 import FormMenu from "./components/FormMenu";
-import CreateForm from "./components/CreateForm";
+import FormCreate from "./components/FormCreate";
 import FormEdit from "./components/FormEdit";
 import FormSearch from "./components/FormSearch";
 
@@ -18,7 +18,7 @@ function App() {
               </div>
             </Route>
             <Route path="/create-player">
-              <CreateForm />
+              <FormCreate />
             </Route>
             <Route path="/edit-player">
               <FormEdit />
