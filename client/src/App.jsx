@@ -4,6 +4,7 @@ import "./App.css";
 import FormMenu from "./components/FormMenu";
 import CreateForm from "./components/CreateForm";
 import FormEdit from "./components/FormEdit";
+import FormSearch from "./components/FormSearch";
 
 function App() {
   return (
@@ -21,6 +22,9 @@ function App() {
             </Route>
             <Route path="/edit-player">
               <FormEdit />
+            </Route>
+            <Route path="/search-player">
+              <FormSearch />
             </Route>
           </Switch>
         </main>

@@ -21,8 +21,10 @@ function FormMenu() {
         </Nav.Link>
       </div>
       <div className="boxMenu">
-        <img src={findImg} alt="findplayer"></img>
-        <p>Find User</p>
+        <Nav.Link as={NavLink} to="/search-player">
+          <img src={findImg} alt="searchplayer"></img>
+          <p>Search Player</p>
+        </Nav.Link>
       </div>
     </>
   );

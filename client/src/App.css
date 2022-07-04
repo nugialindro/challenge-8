@@ -20,3 +20,13 @@ main {
   align-items: center;
   gap: 200px;
 }
+
+.search-page {
+  width: 70%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
