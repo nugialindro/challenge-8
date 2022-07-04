@@ -1,0 +1,20 @@
+.new-player-form {
+  background-color: #323232;
+  padding: 50px;
+  color: white;
+  width: 400px;
+  border-radius: 20px;
+}
+
+.new-user-details {
+  width: 400px;
+  background-color: #323232;
+  padding: 50px;
+  color: white;
+  width: 400px;
+  border-radius: 20px;
+}
+
+.list {
+  border: 1px solid red;
+}

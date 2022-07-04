@@ -1,0 +1,22 @@
+main {
+  /* background-image: url("/public/bg.jpg"); */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: #272727;
+}
+
+.content {
+  width: 50%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.form-page {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 200px;
+}

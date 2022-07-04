@@ -1,0 +1,19 @@
+.boxMenu {
+  color: white;
+  flex-direction: column;
+  background-color: #323232;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  border-radius: 15px;
+  transition: transform 0.3s;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.boxMenu:hover {
+  transform: scale(1.1);
+}
