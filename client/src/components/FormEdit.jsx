@@ -1,6 +1,7 @@
 import { Form, Button } from "react-bootstrap";
 import { useState } from "react";
 import cn from "classnames";
+import BackButton from "./BackButton";
 import "./Form.css";
 import "../App.css";
 
@@ -38,6 +39,7 @@ function FormEdit() {
 
   return (
     <div className="form-page">
+      <BackButton />
       <Form className="new-player-form" onSubmit={handleSubmit}>
         <h2 className="mb-5">Edit player details</h2>
         <Form.Group className="mb-3">
@@ -58,7 +60,7 @@ function FormEdit() {
         </Button>
       </Form>
       <>
-        <div className={cn(isSubmit && "edit-player-details")}>
+        <div className={cn(isSubmit && "player-details")}>
           {newPlayer.map((data, index) => (
             <div key={index}>
               <h2 className="mb-4">Player Details</h2>

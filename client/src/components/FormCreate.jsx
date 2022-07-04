@@ -1,9 +1,9 @@
 import { Form, Button } from "react-bootstrap";
-
 import { useState } from "react";
 import cn from "classnames";
 import "./Form.css";
 import "../App.css";
+import BackButton from "./BackButton";
 
 function CreateForm() {
   const [newPlayer, setNewPlayer] = useState([]);
@@ -39,6 +39,7 @@ function CreateForm() {
 
   return (
     <div className="form-page">
+      <BackButton />
       <Form className="new-player-form" onSubmit={handleSubmit}>
         <h2 className="mb-5">Create New Player</h2>
         <Form.Group className="mb-3">
@@ -58,10 +59,10 @@ function CreateForm() {
         </Button>
       </Form>
       <>
-        <div className={cn(isSubmit && "new-player-details")}>
+        <div className={cn(isSubmit && "player-details")}>
           {newPlayer.map((data, index) => (
             <div key={index}>
-              <h2 className="mb-5">Your Details</h2>
+              <h2 className="mb-5">Player Details</h2>
               <p>Username : {data.username} </p>
               <p>Email : {data.email} </p>
               <p>Password : {data.password} </p>

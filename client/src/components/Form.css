@@ -6,7 +6,7 @@
   border-radius: 20px;
 }
 
-.new-player-details {
+.player-details {
   width: 400px;
   background-color: #323232;
   padding: 50px;
@@ -22,6 +22,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 18px;
   width: 150px;
   height: 150px;
   border-radius: 15px;
@@ -51,22 +52,15 @@
 }
 
 .search-details {
-  width: 800px;
   background-color: #323232;
-  padding: 50px;
+  padding-top: 50px;
   color: white;
   border-radius: 20px;
 }
 
 .back-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url("./img/back.png");
-  background-repeat: no-repeat;
-
-  color: white;
-  width: 70px;
-  height: 50px;
-  border-radius: 20px;
+  background-color: Transparent;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
 }
